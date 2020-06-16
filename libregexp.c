@@ -2486,6 +2486,7 @@ int lre_get_flags(const uint8_t *bc_buf)
     return bc_buf[RE_HEADER_FLAGS];
 }
 
+/*
 #ifdef TEST
 
 BOOL lre_check_stack_overflow(void *opaque, size_t alloca_size)
@@ -2539,3 +2540,4 @@ int main(int argc, char **argv)
     return 0;
 }
 #endif
+*/
