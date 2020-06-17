@@ -2486,6 +2486,16 @@ int lre_get_flags(const uint8_t *bc_buf)
     return bc_buf[RE_HEADER_FLAGS];
 }
 
+BOOL lre_check_stack_overflow(void *opaque, size_t alloca_size)
+{
+  return FALSE;
+}
+
+void *lre_realloc(void *opaque, void *ptr, size_t size)
+{
+  return realloc(ptr, size);
+}
+
 /*
 #ifdef TEST
 
