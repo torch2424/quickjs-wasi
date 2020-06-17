@@ -13,6 +13,6 @@
 # Probably what we want to do anyways
 # https://developer.mozilla.org/en-US/docs/WebAssembly/existing_C_to_wasm
 
-emcc -s WASM=1 -I libregexp \
+emcc -g -s WASM=1 -I libregexp \
   as-libregexp.c libregexp.c cutils.c libunicode.c \
   -o as-libregexp.wasm 
